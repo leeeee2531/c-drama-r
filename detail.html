@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>드라마 상세 정보</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="goHome()">
+      C-Drama Room
+    </div>
+    <nav class="nav-menu">
+
+      <button
+        class="back-btn"
+        onclick="history.back()"
+      >
+        ← 뒤로가기
+      </button>
+
+    </nav>
+  </header>
+
+  <main class="detail-container">
+    <!-- 자바스크립트가 ID를 인식해 이 영역을 채우게 됩니다 -->
+    <div class="detail-wrapper" id="detailWrapper">
+      <p class="loading">드라마 정보를 불러오는 중입니다...</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

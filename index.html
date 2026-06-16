@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Drama Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <button class="menu-toggle" id="menuToggle">
+    ☰
+  </button>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="favorites.html">❤️ 즐겨찾기</a>
+    <button id="darkModeBtn">🌙 다크모드</button>
+  </nav>
+</header>
+
+<main>
+
+  <section id="heroSection" class="hero-section">
+    <h1 class="main-title" onclick="goHome()">C-Drama Room</h1>
+
+    <div class="search-section">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="중드 제목 또는 키워드 입력"
+      >
+
+      <button id="searchBtn">
+        검색
+      </button>
+    </div>
+  </section>
+
+  <section class="content-container">
+
+    <h2
+      id="sectionTitle"
+      style="display:none;"
+    >
+    </h2>
+
+    <div
+      class="drama-grid"
+      id="dramaGrid"
+    ></div>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
